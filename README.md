@@ -1,18 +1,4 @@
-HTML Manual
-   ↓
-Text Loader
-   ↓
-Text Splitter
-   ↓
-Embeddings (FREE, local)
-   ↓
-Vector Store (FAISS / Chroma)
-   ↓
-Retriever
-   ↓
-LLM Generator (FREE)
-   ↓
-Answer
+
 
 # RAG Car Manual Assistant
 
@@ -80,3 +66,22 @@ This behavior demonstrates the system’s ability to:
 - Ground responses strictly in retrieved documentation
 - Avoid hallucination in safety-critical domains
 - Prioritize factual correctness over verbosity
+
+
+
+> Note: In markdown, that’s a code block inside a markdown section. Keep the outer ```markdown only if you’re showing it as an example; in your README you’ll include just the inner part.
+
+
+
+```markdown
+## Pipeline (RAG Architecture)
+
+```mermaid
+flowchart TD
+    A[HTML Manual] --> B[Text Loader]
+    B --> C[Text Splitter]
+    C --> D[Embeddings (FREE, local)]
+    D --> E[Vector Store (FAISS)]
+    E --> F[Retriever]
+    F --> G[LLM Generator (FREE)]
+    G --> H[Answer]
