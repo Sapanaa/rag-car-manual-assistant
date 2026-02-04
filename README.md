@@ -69,11 +69,6 @@ This behavior demonstrates the system’s ability to:
 
 
 
-> Note: In markdown, that’s a code block inside a markdown section. Keep the outer ```markdown only if you’re showing it as an example; in your README you’ll include just the inner part.
-
-
-
-
 ## Pipeline (RAG Architecture)
 
 ```text
