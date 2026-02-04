@@ -76,12 +76,19 @@ This behavior demonstrates the system’s ability to:
 ```markdown
 ## Pipeline (RAG Architecture)
 
-```mermaid
-flowchart TD
-    A[HTML Manual] --> B[Text Loader]
-    B --> C[Text Splitter]
-    C --> D[Embeddings (FREE, local)]
-    D --> E[Vector Store (FAISS)]
-    E --> F[Retriever]
-    F --> G[LLM Generator (FREE)]
-    G --> H[Answer]
+```text
+HTML Manual
+   ↓
+Text Loader
+   ↓
+Text Splitter
+   ↓
+Embeddings (FREE, local)
+   ↓
+Vector Store (FAISS)
+   ↓
+Retriever
+   ↓
+LLM Generator (FREE)
+   ↓
+Answer
