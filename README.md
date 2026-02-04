@@ -73,7 +73,7 @@ This behavior demonstrates the system’s ability to:
 
 
 
-```markdown
+
 ## Pipeline (RAG Architecture)
 
 ```text
@@ -92,3 +92,4 @@ Retriever
 LLM Generator (FREE)
    ↓
 Answer
+```
