@@ -109,4 +109,4 @@ curl -X POST "http://localhost:5678/webhook-test/ask" \
   -d '{"question": "what does the warning light mean"}'
   ```
 
-![n8n Screenshot](image/n8n_int.png)
+![n8n Screenshot](image/n8n.png)
