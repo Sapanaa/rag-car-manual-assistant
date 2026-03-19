@@ -8,3 +8,6 @@ torch
 unstructured
 beautifulsoup4
 numpy
+pydantic
+fastapi
+uvicorn
