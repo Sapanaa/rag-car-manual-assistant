@@ -88,3 +88,25 @@ LLM Generator (FREE)
    ↓
 Answer
 ```
+
+## API & n8n Integration
+
+- api.py wraps the RAG pipeline in a FastAPI server running on port 8001
+- n8n workflow sits in front of the API as an automation layer
+- External apps send a POST request to the n8n webhook, which forwards it to FastAPI and returns the answer
+
+User/App → n8n Webhook → HTTP Request → FastAPI (/ask) → RAG Pipeline → Answer
+```
+# 1. Start the FastAPI server
+uvicorn api:app --host 0.0.0.0 --port 8001
+
+# 2. Start n8n (Docker)
+docker run -it --rm -p 5678:5678 n8nio/n8n
+
+# 3. Send a question
+curl -X POST "http://localhost:5678/webhook-test/ask" \
+  -H "Content-Type: application/json" \
+  -d '{"question": "what does the warning light mean"}'
+  ```
+
+![n8n Screenshot](image/n8n_int.png)
